@@ -1,5 +1,7 @@
 # phpMyAdmin on Alpine
 
+Image size: 45.28 MB
+
 ## Docker run
 
     docker run \
@@ -10,21 +12,6 @@
 
 ## Software
 
-    # apk info apache2 php5 phpmyadmin
-    apache2-2.4.10-r0 description:
-    A high performance Unix-based HTTP server
-
-    apache2-2.4.10-r0 webpage:
-    http://httpd.apache.org/
-
-    apache2-2.4.10-r0 installed size:
-    4280320
-
-    phpmyadmin-4.3.8-r0 description:
-    A Web-based PHP tool for administering MySQL
-
-    phpmyadmin-4.3.8-r0 webpage:
-    http://www.phpmyadmin.net/
-
-    phpmyadmin-4.3.8-r0 installed size:
-    35409920
+* apache2-2.4.10-r0
+* php-apache2-5.6.5-r0
+* phpMyAdmin 4.3.13 (from source)
