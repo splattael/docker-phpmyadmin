@@ -1,6 +1,6 @@
 # phpMyAdmin on Alpine
 
-Image size: 45.28 MB
+Image size: 46.47 MB
 
 ## Docker run
 
