@@ -1,5 +1,7 @@
 # phpMyAdmin on Alpine
 
+[![docker hub](https://img.shields.io/badge/docker-image-blue.svg?style=flat-square)](https://registry.hub.docker.com/u/splattael/phpmyadmin/)
+
 Image size: 46.48 MB
 
 ## Docker run
