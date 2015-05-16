@@ -2,7 +2,7 @@
 
 [![docker hub](https://img.shields.io/badge/docker-image-blue.svg?style=flat-square)](https://registry.hub.docker.com/u/splattael/phpmyadmin/)
 
-Image size: 46.48 MB
+Image size: 44.33 MB
 
 ## Docker run
 
@@ -15,5 +15,5 @@ Image size: 46.48 MB
 ## Software
 
 * apache2-2.4.10-r0
-* php-apache2-5.6.5-r0
-* phpMyAdmin 4.4.2 (from source)
+* php-apache2-5.6.8-r0
+* phpMyAdmin 4.4.7 (from source)
