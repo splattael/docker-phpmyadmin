@@ -1,7 +1,7 @@
 FROM alpine
 MAINTAINER Peter Suschlik <peter@suschlik.de>
 
-ENV RELEASE_DATE 2015-06-23
+ENV RELEASE_DATE 2015-07-03
 ENV PHPMYADMIN_VERSION 4.4.10
 
 ENV PHPMYADMIN_DIR /usr/share/webapps/phpmyadmin/
@@ -33,8 +33,6 @@ ADD phpmyadmin.conf /etc/apache2/conf.d/
 WORKDIR $PHPMYADMIN_DIR
 
 EXPOSE 80
-
-CMD /usr/sbin/apachectl -D FOREGROUND
 
 ADD entrypoint.sh /
 ENTRYPOINT ["/entrypoint.sh"]

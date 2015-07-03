@@ -7,7 +7,7 @@ if [ "`grep NO_SECRET $config`" != "" ]; then
 fi
 
 if [ "$1" = "" ]; then
-  /usr/sbin/apachectl -D FOREGROUND
+  exec /usr/sbin/httpd -D FOREGROUND
 else
   exec "$@"
 fi
