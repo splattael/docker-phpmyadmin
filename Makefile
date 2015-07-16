@@ -1,5 +1,6 @@
 
 NAME=phpmyadmin
+VERSION=4.4.11
 
 build:
 	docker build -t ${NAME} .
@@ -12,3 +13,8 @@ test: build
 
 daemon: build
 	docker run -d --name ${NAME} ${NAME}
+
+release:
+	git commit -a -m "Upgrade to phpMyAdmin ${VERSION}"
+	git tag -f v${VERSION}
+	git push
