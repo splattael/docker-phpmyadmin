@@ -16,16 +16,16 @@ RUN \
   rm -fr /usr/bin/php
 
 RUN \
-  apk add -U curl && \
+  apk add -U wget && \
   cd /tmp && \
-  curl -LOs $PHPMYADMIN_DOWNLOAD && \
+  wget -q --no-check-certificate $PHPMYADMIN_DOWNLOAD && \
   tar xzf $PHPMYADNIN_PACKAGE.tar.gz && \
   mkdir -p /usr/share/webapps && \
   mv $PHPMYADNIN_PACKAGE $PHPMYADMIN_DIR && \
   rm -fr $PHPMYADMIN_DIR/config.sample.inc.php && \
   rm -fr $PHPMYADMIN_DIR/setup && \
   chown -R apache:apache $PHPMYADMIN_DIR && \
-  apk del --purge curl && \
+  apk del --purge wget && \
   rm -fr /var/cache/apk/* && \
   rm -fr /tmp/*
 
