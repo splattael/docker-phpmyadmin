@@ -17,3 +17,9 @@ Image size: 44.53 MB
 * apache2-2.4.12-r0
 * php-apache2-5.6.10-r0
 * phpMyAdmin 4.4.13.1 (from source)
+
+## Release
+
+* `Makefile`: Bump `VERSION`
+* `Dockerfile: Bump `PHPMYADMIN_VERSION` and `RELEASE_DATE`
+* `README.md`: Bump versions in `Software` section
