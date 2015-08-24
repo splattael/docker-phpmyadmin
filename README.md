@@ -21,6 +21,6 @@ Image size: 44.53 MB
 ## Release
 
 * `Makefile`: Bump `VERSION`
-* `Dockerfile: Bump `PHPMYADMIN_VERSION` and `RELEASE_DATE`
+* `Dockerfile`: Bump `PHPMYADMIN_VERSION` and `RELEASE_DATE`
 * `README.md`: Bump versions in `Software` section
 * Run `make release`
