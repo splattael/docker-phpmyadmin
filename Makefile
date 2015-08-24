@@ -17,4 +17,5 @@ daemon: build
 release:
 	git commit -av -e -m "Upgrade to phpMyAdmin ${VERSION}" && \
 	git tag -f v${VERSION} && \
-	git push --tags
+	git push && \
+	git push --tags -f
