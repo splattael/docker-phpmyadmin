@@ -15,6 +15,6 @@ daemon: build
 	docker run -d --name ${NAME} ${NAME}
 
 release:
-	git commit -a -m "Upgrade to phpMyAdmin ${VERSION}"
-	git tag -f v${VERSION}
+	git commit -av -e -m "Upgrade to phpMyAdmin ${VERSION}" && \
+	git tag -f v${VERSION} && \
 	git push --tags
