@@ -17,7 +17,7 @@ Image size: 44.53 MB
 
 * apache2-2.4.12-r1
 * php-apache2-5.6.13-r0
-* phpMyAdmin 4.4.15 (from source)
+* phpMyAdmin 4.5.0.2 (from source)
 
 ## Release
 
