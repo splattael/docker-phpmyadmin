@@ -13,9 +13,9 @@
 
 ## Software
 
-* apache2-2.4.16-r9
+* apache2-2.4.16-r0
 * php-apache2-5.6.14-r0
-* phpMyAdmin 4.5.1 (from source)
+* phpMyAdmin 4.5.2 (from source)
 
 ## Release
 
