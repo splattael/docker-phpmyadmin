@@ -11,6 +11,20 @@
       -P \
       splattael/phpmyadmin
 
+### mod_remoteip.so
+
+By default the HTTP header `X-Forwarded-For` is used in access log
+so proxying requests is doable.
+
+For e.g. nginx proxy do:
+
+    location / {
+      proxy_pass http://backend;
+      proxy_set_header Host $host;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+
+
 ## Software
 
 * apache2-2.4.16-r0
