@@ -1,7 +1,7 @@
 FROM alpine
 MAINTAINER Peter Suschlik <peter@suschlik.de>
 
-ENV RELEASE_DATE 2015-12-22
+ENV RELEASE_DATE 2015-12-23
 ENV PHPMYADMIN_VERSION 4.5.2
 
 ENV PHPMYADMIN_DIR /usr/share/webapps/phpmyadmin/
