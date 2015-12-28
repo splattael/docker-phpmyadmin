@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.2
 MAINTAINER Peter Suschlik <peter@suschlik.de>
 
 ENV RELEASE_DATE 2015-12-28

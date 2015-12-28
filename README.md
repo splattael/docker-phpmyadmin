@@ -1,4 +1,4 @@
-# phpMyAdmin on Alpine
+# phpMyAdmin on Alpine 3.2
 
 [![docker hub](https://img.shields.io/badge/docker-image-blue.svg?style=flat-square)](https://registry.hub.docker.com/u/splattael/phpmyadmin/)
 [![imagelayers](https://badge.imagelayers.io/splattael/phpmyadmin:latest.svg)](https://imagelayers.io/?images=splattael/phpmyadmin:latest)
