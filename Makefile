@@ -1,9 +1,9 @@
 
 NAME=phpmyadmin
-VERSION=$(shell cat VERSION)
+VERSION=4.5.4.1
 
 build:
-	docker build -t ${NAME} --build-arg VERSION=${VERSION} .
+	docker build -t ${NAME} .
 
 shell: build
 	docker run -it --rm ${NAME} sh
