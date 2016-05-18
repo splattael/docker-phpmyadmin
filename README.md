@@ -28,8 +28,8 @@ For e.g. nginx proxy do:
 ## Software
 
 * apache2-2.4.16-r0
-* php-apache2-5.6.17-r0
-* phpMyAdmin 4.6.0 (from source)
+* php-apache2-5.6.21-r0
+* phpMyAdmin 4.6.1 (from source)
 
 ## Release
 
