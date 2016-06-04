@@ -29,7 +29,7 @@ For e.g. nginx proxy do:
 
 * apache2-2.4.16-r0
 * php-apache2-5.6.21-r0
-* phpMyAdmin 4.6.1 (from source)
+* phpMyAdmin 4.6.2 (from source)
 
 ## Release
 
