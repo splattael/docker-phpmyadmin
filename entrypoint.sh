@@ -1,5 +1,9 @@
 #!/bin/sh
 
+export PHP_UPLOAD_MAX_FILESIZE=${PHP_UPLOAD_MAX_FILESIZE:-2M}
+export PHP_POST_MAX_SIZE=${PHP_POST_MAX_SIZE:-8M}
+export PHP_MEMORY_LIMIT=${PHP_MEMORY_LIMIT:-128M}
+
 config=$PHPMYADMIN_DIR/config.inc.php
 if [ "`grep NO_SECRET $config`" != "" ]; then
   secret=$(cat /dev/urandom  | uuencode -m - | head -2 | tail -1)
