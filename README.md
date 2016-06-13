@@ -31,6 +31,25 @@ For e.g. nginx proxy do:
     }
 
 
+## Testing
+
+```shell
+docker network create backend
+
+# once
+docker run -d --name mysql --net backend -e MYSQL_ROOT_PASSWORD=mysql mysql
+# later just
+docker start mysql
+
+make test
+
+docker port `docker ps -l -q`
+# 80/tcp -> 0.0.0.0:32768
+```
+
+Connect to http://localhost:32768/phpmyadmin
+
+
 ## Software
 
 * apache2-2.4.16-r0
