@@ -11,6 +11,12 @@
       -P \
       splattael/phpmyadmin
 
+### Environment variables
+
+* `-e PHP_UPLOAD_MAX_FILESIZE=2M`
+* `-e PHP_POST_MAX_SIZE=8M`
+* `-e PHP_MEMORY_LIMIT=128M`
+
 ### mod_remoteip.so
 
 By default the HTTP header `X-Forwarded-For` is used in access log
