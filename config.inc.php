@@ -26,4 +26,5 @@ $cfg['DefaultLang'] = 'en';
 $cfg['ServerDefault'] = 1;
 $cfg['UploadDir'] = '';
 $cfg['SaveDir'] = '';
+$cfg['ExecTimeLimit'] = $_ENV['PHP_MAX_EXECUTION_TIME'];
 ?>

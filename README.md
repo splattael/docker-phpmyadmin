@@ -16,6 +16,7 @@
 * `-e PHP_UPLOAD_MAX_FILESIZE=2M`
 * `-e PHP_POST_MAX_SIZE=8M`
 * `-e PHP_MEMORY_LIMIT=128M`
+* `-e PHP_MAX_EXECUTION_TIME=300`
 
 ### mod_remoteip.so
 
