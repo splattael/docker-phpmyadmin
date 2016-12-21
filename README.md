@@ -1,6 +1,9 @@
 # phpMyAdmin on Alpine 3.2
 
-[![docker hub](https://img.shields.io/badge/docker-image-blue.svg?style=flat-square)](https://hub.docker.com/r/splattael/phpmyadmin/)
+[hub]: https://hub.docker.com/r/splattael/phpmyadmin
+
+[![docker hub](https://img.shields.io/badge/docker-image-blue.svg?style=round-square)][hub]
+[![docker pulls](https://img.shields.io/docker/pulls/splattael/phpmyadmin.svg)][hub]
 [![version](https://images.microbadger.com/badges/version/splattael/phpmyadmin.svg)](https://registry.hub.docker.com/u/splattael/phpmyadmin/)
 [![image](https://images.microbadger.com/badges/image/splattael/phpmyadmin.svg)](https://microbadger.com/images/splattael/phpmyadmin)
 
