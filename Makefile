@@ -1,6 +1,6 @@
 
 NAME=phpmyadmin
-VERSION=4.7.1
+VERSION=4.7.2
 
 build:
 	docker build -t ${NAME} .
