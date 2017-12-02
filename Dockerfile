@@ -1,5 +1,5 @@
 FROM alpine:3.6
-MAINTAINER Peter Suschlik <peter@suschlik.de>
+MAINTAINER Peter Leitzen <peter@leitzen.de>
 
 ENV RELEASE_DATE 2017-11-04
 ENV PHPMYADMIN_VERSION 4.7.5
