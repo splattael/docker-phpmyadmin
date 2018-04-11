@@ -1,4 +1,4 @@
-# phpMyAdmin on Alpine 3.6
+# phpMyAdmin on Alpine 3.7
 
 [hub]: https://hub.docker.com/r/splattael/phpmyadmin
 

@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM alpine:3.7
 MAINTAINER Peter Leitzen <peter@leitzen.de>
 
 ENV RELEASE_DATE 2017-04-11
@@ -15,18 +15,13 @@ RUN \
   rm -fr /usr/bin/php
 
 RUN \
-  apk add -U wget && \
-  cd /tmp && \
-  wget -q --no-check-certificate $PHPMYADMIN_DOWNLOAD && \
-  tar xzf $PHPMYADNIN_PACKAGE.tar.gz && \
   mkdir -p /usr/share/webapps && \
+  cd /tmp && \
+  wget -q -O - $PHPMYADMIN_DOWNLOAD | tar xzf - && \
   mv $PHPMYADNIN_PACKAGE $PHPMYADMIN_DIR && \
-  rm -fr $PHPMYADMIN_DIR/config.sample.inc.php && \
-  rm -fr $PHPMYADMIN_DIR/setup && \
+  rm -fr $PHPMYADMIN_DIR/{setup,config.sample.inc.php} && \
   chown -R apache:apache $PHPMYADMIN_DIR && \
-  apk del --purge wget && \
-  rm -fr /var/cache/apk/* && \
-  rm -fr /tmp/*
+  echo "Done"
 
 ADD config.inc.php $PHPMYADMIN_DIR
 ADD phpmyadmin.conf /etc/apache2/conf.d/
