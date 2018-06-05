@@ -8,7 +8,21 @@ ENV PHPMYADMIN_DIR /usr/share/webapps/phpmyadmin/
 ENV PHPMYADNIN_PACKAGE phpMyAdmin-$PHPMYADMIN_VERSION-english
 ENV PHPMYADMIN_DOWNLOAD https://files.phpmyadmin.net/phpMyAdmin/$PHPMYADMIN_VERSION/$PHPMYADNIN_PACKAGE.tar.gz
 
-ENV REQUIRED_PACKAGES apache2 php5 php5-apache2 php5-mysqli php5-zip php5-zlib php5-bz2 php5-ctype php5-gd php5-mcrypt php5-json php5-openssl
+ENV REQUIRED_PACKAGES \
+  apache2 \
+  php7 \
+  php7-apache2 \
+  php7-bz2 \
+  php7-ctype \
+  php7-gd \
+  php7-json \
+  php7-mbstring \
+  php7-mcrypt \
+  php7-mysqli \
+  php7-openssl \
+  php7-session \
+  php7-zip \
+  php7-zlib
 
 RUN \
   apk add -U --no-cache $REQUIRED_PACKAGES && \
