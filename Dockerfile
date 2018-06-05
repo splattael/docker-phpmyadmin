@@ -1,7 +1,7 @@
 FROM alpine:3.7
 MAINTAINER Peter Leitzen <peter@leitzen.de>
 
-ENV RELEASE_DATE 2017-05-26
+ENV RELEASE_DATE 2017-06-05
 ENV PHPMYADMIN_VERSION 4.8.1
 
 ENV PHPMYADMIN_DIR /usr/share/webapps/phpmyadmin/
