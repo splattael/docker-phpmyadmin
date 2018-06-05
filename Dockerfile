@@ -26,7 +26,7 @@ ENV REQUIRED_PACKAGES \
 
 RUN \
   apk add -U --no-cache $REQUIRED_PACKAGES && \
-  rm -fr /usr/bin/php
+  rm /usr/bin/php7
 
 RUN \
   mkdir -p /usr/share/webapps && \
