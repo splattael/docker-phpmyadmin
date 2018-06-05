@@ -9,7 +9,7 @@ shell: build
 	docker run -it --rm ${NAME} sh
 
 test: build
-	docker run --net backend  --env-file .testenv --rm --sig-proxy=false -P ${NAME}
+	docker run --net backend  --env-file .testenv --rm -it -P ${NAME}
 
 daemon: build
 	docker run -d --name ${NAME} ${NAME}
