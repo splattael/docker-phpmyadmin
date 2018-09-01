@@ -57,9 +57,9 @@ Connect to http://localhost:32768/phpmyadmin
 
 ## Software
 
-* apache2-2.4.33-r0
+* apache2-2.4.34-r0
 * php-apache2-7.1.17-r0
-* phpMyAdmin 4.8.2 (from source)
+* phpMyAdmin 4.8.3 (from source)
 
 ## Release
 
