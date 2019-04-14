@@ -1,4 +1,4 @@
-# phpMyAdmin on Alpine 3.7
+# phpMyAdmin on Alpine 3.9
 
 [hub]: https://hub.docker.com/r/splattael/phpmyadmin
 
@@ -42,7 +42,11 @@ For e.g. nginx proxy do:
 docker network create backend
 
 # once
-docker run -d --name mysql --net backend -e MYSQL_ROOT_PASSWORD=mysql mysql
+docker run -d --name mysql --net backend -e MYSQL_ROOT_PASSWORD=mysql mysql:5.7
+
+# OR
+# docker run -d --name mysql --net backend -e MYSQL_ROOT_PASSWORD=mysql mysql:8.0 --default-authentication-plugin=mysql_native_password
+
 # later just
 docker start mysql
 
@@ -57,9 +61,9 @@ Connect to http://localhost:32768/phpmyadmin
 
 ## Software
 
-* apache2-2.4.34-r0
-* php-apache2-7.1.17-r0
-* phpMyAdmin 4.8.3 (from source)
+* apache2-2.4.39-r0
+* php-apache2-7.2.14-r0
+* phpMyAdmin 4.8.5 (from source)
 
 ## Release
 
