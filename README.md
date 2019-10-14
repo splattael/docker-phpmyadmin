@@ -1,4 +1,4 @@
-# phpMyAdmin on Alpine 3.9
+# phpMyAdmin on Alpine 3.10
 
 [hub]: https://hub.docker.com/r/splattael/phpmyadmin
 
@@ -61,9 +61,9 @@ Connect to http://localhost:32768/phpmyadmin
 
 ## Software
 
-* apache2-2.4.39-r0
-* php-apache2-7.2.14-r0
-* phpMyAdmin 4.8.5 (from source)
+* apache2-2.4.41-r0
+* php-apache2-7.3.10-r0
+* phpMyAdmin 4.9.1 (from source)
 
 ## Release
 
