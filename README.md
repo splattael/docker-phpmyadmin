@@ -1,4 +1,4 @@
-# phpMyAdmin on Alpine 3.10
+# phpMyAdmin on Alpine 3.12
 
 [hub]: https://hub.docker.com/r/splattael/phpmyadmin
 
@@ -21,6 +21,7 @@
 * `-e PHP_POST_MAX_SIZE=8M`
 * `-e PHP_MEMORY_LIMIT=128M`
 * `-e PHP_MAX_EXECUTION_TIME=300`
+* `-e PMA_SERVERS=mysql://mysql` - See [`config.inc.php`](https://github.com/splattael/docker-phpmyadmin/blob/master/config.inc.php) for more examples
 
 ### mod_remoteip.so
 
@@ -61,9 +62,9 @@ Connect to http://localhost:32768/phpmyadmin
 
 ## Software
 
-* apache2-2.4.41-r0
-* php-apache2-7.3.10-r0
-* phpMyAdmin 4.9.1 (from source)
+* apache2-2.4.43-r0
+* php-apache2-7.3.21-r0
+* phpMyAdmin 4.9.5 (from source)
 
 ## Release
 
