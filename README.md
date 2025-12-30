@@ -1,3 +1,9 @@
+# DISCONTINUED
+
+This repo has been discontinued as of 2025-12-30.
+
+Please use https://hub.docker.com/_/phpmyadmin and https://github.com/phpmyadmin/docker.
+
 # phpMyAdmin on Alpine 3.12
 
 [hub]: https://hub.docker.com/r/splattael/phpmyadmin
